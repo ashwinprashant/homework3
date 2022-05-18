@@ -1,18 +1,22 @@
 
-
 <%
 places = ["Mexico City", "Charleston", "Beijing", "Amsterdam"]
 %>
 
-<h1>Places I've been </h1>
 
-<ul>
-<% for place in places%>
-   <li><a href = "/<%= place%>"> <%= place%> </a> </li>
+<h1>Places I've Been</h1>
+	<ul>
+	<% for place in @places %>
+	    <li>
+	    <a href="/places/<%= place["id"] %> "><%=place["name"]%></a>
+	    </li>
+	<% end %>
+	</ul>
+	
 
-<% end %>
-
-</ul>
+	<p>
+	  <a href="/places/new">New Place</a>
+	</p>
 
 
 
