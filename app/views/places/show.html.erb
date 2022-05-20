@@ -1,4 +1,5 @@
 <%# Page which gets opened up when user clicks on the new place created via form%>
+
 <h1><%= @place["name"] %></h1>
 	
 	<ul>
@@ -9,7 +10,7 @@
 	    <% end %>
 	</ul>
 	
-	<p><a href="/posts/new?place_id=<%= @place["id"] %>">Create a new post for <%= @place["name"]%> </a></p>
+<p><a href="/posts/new?place_id=<%= @place["id"] %>"> Create a new post for <%= @place["name"]%> </a></p>
 	
-    <p><a href="/places"> Return to Places </a></p>
+<p><a href="/places"> Return to Places </a></p>
 

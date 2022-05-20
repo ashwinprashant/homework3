@@ -1,10 +1,12 @@
 <%# Page which gets opened up when user clicks on "New place"%>
+
 <%# User input captured through the form%>
+
 <%= form_with :model => @place do |form| %>
 	  <p>
 	    <%= form.label "name", "Place Name" %>
 	    <%= form.text_field "name" %>
 	  </p>
 	  <%= form.submit %>
-	<% end %>
+<% end %>
 
